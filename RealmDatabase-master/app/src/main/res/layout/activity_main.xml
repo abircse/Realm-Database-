@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.studioabir.maptest.realm.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:hint="Enter Student Roll No Here"
+        android:id="@+id/roll_no"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:hint="Enter Student Name Here"
+        android:id="@+id/name"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Data"
+        android:layout_marginTop="20dp"
+        android:id="@+id/add"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:onClick="clickAction"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View All Data"
+        android:layout_marginTop="5dp"
+        android:id="@+id/view"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimary"
+        android:onClick="clickAction"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Data"
+        android:background="@color/colorPrimary"
+        android:textStyle="bold"
+        android:id="@+id/update"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="5dp"
+        android:onClick="clickAction"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Data"
+        android:textStyle="bold"
+        android:id="@+id/delete"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimary"
+        android:onClick="clickAction"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/text"/>
+
+    </ScrollView>
+</LinearLayout>
